@@ -4,13 +4,14 @@ using namespace std;
 
 class Worker{
 	public:
-//deklaracja zmiennych cz≥onkowskich
+//deklaracja zmiennych cz≈Çonkowskich
 	string name="Janusz";
 	string surname;
 	unsigned short int age;
-// definicja funkcji cz≥onkowskiej
+// definicja funkcji cz≈Çonkowskiej
 void showName(){
-		cout<<"twoje imiÍ: "; //zadanie dom tutaj dodaÊ imie wykorzystujπc funkcjÍ cz≥onkowskπ
+		cout<<"twoje imiƒô: "; //zadanie dom tutaj dodaƒá imie wykorzystuj≈°c funkcjƒô cz≈Çonkowsk≈°
+		cin>>name;
 	}
 };
 
