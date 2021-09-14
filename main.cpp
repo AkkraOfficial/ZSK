@@ -4,25 +4,55 @@ using namespace std;
 
 class Worker{
 	public:
-//deklaracja zmiennych cz≈Çonkowskich
-	string name="Janusz";
+//deklaracja zmiennych cz≥onkowskich
+	string name;
 	string surname;
-	unsigned short int age;
-// definicja funkcji cz≈Çonkowskiej
-void showName(){
-		cout<<"twoje imiƒô: "; //zadanie dom tutaj dodaƒá imie wykorzystuj≈°c funkcjƒô cz≈Çonkowsk≈°
-		cin>>name;
-	}
+	string nationality;
+	string alldata;
+	unsigned short int yearBirthday;
+	char gender;
+	float height;
+	
+// definicja funkcji cz≥onkowskiej
+
+
+	void showSurname();
+	void showPersonality();
+	void showAllData();
+	void showName();
+
 };
+
+// deklaracja metody (prototyp)
+
+
+
+//definicja metody show surname
+
+void Worker::showSurname(){
+	cout<<"Nazwisko: "<<surname; 
+};
+	void Worker::showName(){
+	cout<<"Imie: "<<name; 
+	};
+	void Worker::showPersonality(){
+		cout<<"narodowoúÊ: "<<nationality; 
+	};
+	void Worker::showAllData(){
+		cout<<"data urodzenia: "<<alldata; 
+	};
 
 int main(int argc, char** argv) {
 	setlocale(LC_CTYPE, "polish");
-//	typ danych nazwa_zmiennej
 	Worker pracownik;
 	pracownik.surname ="Nowak";
-	//cout<<pracownik.surname;
+	pracownik.name ="Marek";
+	pracownik.showPersonality ="";
+	pracownik.showSurname();
 	pracownik.showName();
-	pracownik.age=16;
-	cout<<"wiek: " << pracownik.age<<endl;
+	pracownik.showPersonality();
 	return 0;
 }
+// Zad dom imie nazwisko narodowoúÊ data urodzenia wzrost
+
+
